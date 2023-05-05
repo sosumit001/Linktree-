@@ -1,0 +1,67 @@
+#addBio {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    margin:40px auto -30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    color: #666666;
+    cursor: pointer;
+}
+.add-bio-btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    background-color: #d9d8f1;
+    transition: 300ms;
+}
+.bio-container {
+    left: 0;
+    top:100%;
+    width: 100%;
+    height: 110px;
+}
+#userbio{
+    height: 60px;
+    width: 90%;
+    margin:10px auto;
+    border-radius: none;
+    border-radius: 1px;
+    background-color: #d9d8f1;
+    overflow-wrap:normal;
+    word-wrap: break-word;
+    overflow-x: scroll;
+    box-shadow: 1px 1px 8px 1px rgb(89, 89, 102);
+    border: none;
+    color: #5a5959;
+}
+.count-bio-len{
+    position: absolute;
+    left: 5%;
+    top: calc(100% - 21px);
+    font-size: 0.7rem;
+    color: #d9d8f1;
+}
+.bio-text-loading{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(100% - 21px);
+    left: calc(100% - 20%);
+    font-size: 0.7rem;
+    color: #d9d8f1;
+    user-select: none;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(70, 70, 70);
+}

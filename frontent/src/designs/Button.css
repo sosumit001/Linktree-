@@ -1,0 +1,62 @@
+.button-d{
+    position: relative;
+    color:#000000;
+    z-index: 200;
+    font-family:Josefin Sans;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid rgb(189, 167, 167);
+    transition: 300ms;
+    padding: 5px 5px 5px;
+    background-color: rgba(245, 245, 245, 0);
+    overflow: hidden;
+}
+.button-d::before{
+    position: absolute;
+    content: '';
+    left: 1%;
+    top: 100%;
+    width: 98%;
+    height: 90%;
+    background-color: rgb(247, 230, 230);
+    transition: 300ms;
+    z-index: -100;
+}
+.button-d:hover:before {
+    top:5%;
+}
+/*
+.button-d::after{
+    position: absolute;
+    content: '';
+    left:100%;
+    top: 5px;
+    width: 5px;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    transition: 300ms;
+}
+
+.button-d:active{
+    background-color: rgb(241, 241, 241);
+}
+.button-d:active::before{
+    left: 0px;
+    height: 0px;
+
+}
+.button-d:active::after{
+    top:0px;
+    width: 0px;
+    height: calc(100% - 2px);
+}
+
+
+@media only screen and (max-width: 778px){
+    .button-d{
+        font-size: 1.5rem;
+        padding: 5px 5px 5px;
+    }
+} */

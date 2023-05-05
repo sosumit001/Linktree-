@@ -1,0 +1,91 @@
+.profile-image-container{
+    margin: auto;
+    height: fit-content;
+    width: 92%;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #d9d8f1;
+}
+.profile-image-container form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.profile-uploaded-image-container{
+    position: relative;
+    height: 40px;
+    width: 200px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d8f1;
+    background-image: url('');
+}
+.profile-uploaded-image-container-del {
+    position: absolute;
+    width: 80px;
+    height: 95%;
+    left: calc(100% - 81px);
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-uploaded-image-container-img{
+    margin-left:1px; 
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat 
+}
+.profile-image-upload-btn{
+    position: absolute;
+    background-color: rgb(62, 75, 62);
+    width: 80px;
+    left: calc(100% - 80px );
+    cursor: pointer;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: aliceblue;
+}
+.profile-image-container form input{
+    width: 95%;
+    border: 1px solid #b4b3db;
+    color:rgba(0, 0, 0, 0.925);
+    margin: 0px auto;
+}
+.profile-image-container form input::-webkit-file-upload-button{
+    visibility: hidden;
+    width: 5px;
+}
+/* .profile-image-container form input::before{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top:0%;
+    left:calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '+ image';
+    font-family:'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif';
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    background-color: rgb(29, 29, 29);
+} */

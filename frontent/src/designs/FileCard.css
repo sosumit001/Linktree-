@@ -1,0 +1,52 @@
+.file-card{
+    position: absolute;
+    /* background-color: rgb(49, 49, 49); */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    left: 10%;
+    top:200px;
+    color: rgb(240, 240, 240);
+    font-size: 2.3rem;
+    user-select: none;
+    /* width: 50%; */
+}
+.file-card div:first-child{
+    /* background-color: yellow; */
+    position: absolute;
+    font-size: 1.8rem;
+    width: 50vw;
+    top:-150px;
+    text-transform:uppercase;
+    text-align: left;
+}
+.card-item{
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(167, 167, 167);
+    padding: 20px 15px 20px;
+    font-family:'Courier New', Courier, monospace;
+    text-transform:uppercase;
+    padding: 10px 50px 10px;
+    border-radius: 4px;
+    box-shadow: -1px 10px 18px 1px rgba(85, 85, 85, 0.178);
+
+   
+}
+@media only screen and (max-width: 800px){
+    .file-card{
+        background-color: rgba(255, 255, 0, 0);
+    }
+    .card-item{
+        background-color: rgb(255, 255, 251);
+        color: rgb(32, 32, 32);
+    }
+    .file-card div:first-child{
+        position: relative;
+        font-size: 2.5rem;
+        width: 80%;
+    }
+}

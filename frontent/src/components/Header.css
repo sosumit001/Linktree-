@@ -1,0 +1,153 @@
+#Header{
+    position: relative;
+    height: 0px;
+    width: 100%;
+
+}
+.Header-external-part-1{
+    position: absolute;
+    left:0%;
+    height:65px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 0px;
+    display: flex;
+    z-index: 8000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: start;
+    margin-top: 0px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid;
+}
+
+.external-part-2{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    left: calc(100vw - 70px);
+    top:10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+    z-index: 8000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.external-part-2 div{
+    width: 60%;
+    height: 2px;
+    background-color: rgb(248, 246, 255);
+    border-radius: 4px;
+    transition: 200ms;
+}
+
+.external-part-2 div:nth-child(2){
+    width: 40%;
+    height: 1px;
+}
+
+
+.Header-menu div:first-child{
+    position: absolute;
+    width: 50%;
+    height: 0%;
+    left: 50%;
+    top:50%;
+    z-index: 4500;
+    border-radius: 50%;
+    transition: 300ms;
+}
+
+
+/* Header before loging */
+
+
+#Header ul{
+    display: flex;
+    list-style: none;
+    gap:5%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#Header ul li{
+    position: relative;
+    margin: 10px 0px 10px;
+    padding: 10px 8px 5px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 0, 0);
+    cursor: pointer;
+    font-family:Patua One;
+}
+
+
+#Header ul li:active{
+    border-bottom: 1px solid;
+}
+#Header ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(82, 80, 80, 0.979);
+
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+}
+#Header ul li::after, #Header ul li::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+#Header ul li::before{
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 0, 0);
+    z-index: -1;
+}
+#Header ul li:hover::before{
+    background-color: whitesmoke;
+    border-top-color:#000 ;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s,
+    border-bottom-color 0.15s linear 0.2s,  border-left-color 0.15s linear 0.3s;
+}
+#Header ul li::after{
+    border: 0px solid transparent;
+    background-color: rgba(255, 255, 0, 0);
+    z-index: -1;
+}
+#Header ul li:hover::after{
+    border-top: 2px solid #00000000;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition:transform 0.4s linear 0s,border-left-width 0s linear 0.35s;
+}
+
+@media only screen and (max-width: 778px){
+    .Header-external-part-1{
+        width: 100%;
+    }
+    #Header ul{
+        margin: auto;
+        padding-left: 5px;
+    }
+    #Header ul li a{
+        font-size: 1.0rem;
+    }
+    #Header ul li a::after, #Header ul li a::before{
+        display: none;
+    }
+}
+
