@@ -84,6 +84,8 @@
     z-index: 6000;
     transform: scale(0.4);
     margin-top: -20px;
+    border-top: 70px solid rgb(63, 63, 63);
+    border-bottom: 70px solid rgb(63, 63, 63);
 }
 
 

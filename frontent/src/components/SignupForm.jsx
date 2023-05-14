@@ -16,7 +16,7 @@ import App from '../App'
   const handleInputEffect = (element, k) => {
     
     if(element.value.length > k){
-      element.style = 'color:black; background:#FFF1E8'
+      element.style = 'color:white; background:#c133f5'
     } else {
       element.style = 'color:white'
     

@@ -1,8 +1,8 @@
 import './App.css'
 import { useContext } from 'react'
 import { AuthContext } from './context/auth'
-import RoundSpin from './pageAttributes/RoundSpin'
-
+// import RoundSpin from './pageAttributes/RoundSpin'
+import barChart from './assets/bar-chart.svg'
 
 //designs 
 import Button from './designs/Button'
@@ -51,10 +51,10 @@ function App() {
            {/* <button onClick={handlebuildingBtn}  >start building</button> */}
            </div>
         </div>
-
+{/* 
         <div className="home-page-3">
           <SlideEffect />
-        </div>
+        </div> */}
       </div>
       ):(
         <div onScroll={handleScroll} id = "appWrapper">
@@ -70,6 +70,8 @@ function App() {
             Text = {'start building'}
             OnClick={handlebuildingBtn} 
             MarginLeft = {'30%'}
+            Color={'white'}
+            OffColor = {'#c133f5'}
             />
            {/* <button onClick={handlebuildingBtn}  >start building</button> */}
            </div>
@@ -82,8 +84,20 @@ function App() {
 
         <div className="home-page-4">
           <div className="page-4-heading">
-          Analytics
+          
           </div>
+          <div className="page-4-subheading">
+          Maximize the impact of your <span style={{borderBottom:'1px solid'}}>import links</span> with our easy-to-use analysis too
+          </div>
+          <div className="page-4-barChart">
+          <img src={barChart} alt='bar-chart' />
+          </div>
+        </div>
+
+        <div className="home-page-5">
+          <p className="page-5-heading">
+            templates
+          </p>
         </div>
         </div>
         

@@ -22,7 +22,7 @@ label{
     flex-direction: column;
     width: 100%;
     height: calc(100vh - 50px);
-    background-color: #444444;
+    background-color: #000000;
     overflow-y: auto;
     margin-top: 55px;
     /* background-image: url(../assets/bgTemplate/bg-header.svg); */
@@ -33,7 +33,7 @@ label{
 #form p{
     font-family: Klee One;
     margin: 20px 0px 50px;
-    color: #f0cd66;
+    color: #fffdf8;
 }
 
 input{
@@ -59,8 +59,8 @@ input::placeholder{
 
 #formButton{
     padding: 8px;
-    background-color: #f0cd66;
-    color: rgb(73, 73, 73);
+    background-color: #ffffff;
+    color: rgb(31, 31, 31);
     border: none;
     font-size:0.9rem;
     width: 70px;

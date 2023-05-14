@@ -13,12 +13,12 @@ const LoginForm = () => {
 
     const handleInputEffect = (element,V) => {
     
-        if(element.value.length > V){
-          element.style = 'border:2px solid black; color:black'
-        } else {
-          element.style = 'border: 2px solid rgb(157, 169, 180); '
-        
-        }
+      if(element.value.length > V){
+        element.style = 'color:white; background:#c133f5'
+      } else {
+        element.style = 'color:white'
+      
+      }
       }
     
       const handleUsernameChange = (event) => {
